@@ -22,3 +22,8 @@ end
 
 get "/" do
 end
+
+get "/tweets/?" do
+    @tweets = Tweet.all
+    haml :tweets
+end
