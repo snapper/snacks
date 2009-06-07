@@ -1,0 +1,4 @@
+:database:
+  :development: "/path/to/sqlite3/file"
+  :test: "/path/to/sqlite3/file"
+  :production: "/path/to/sqlite3/file"
