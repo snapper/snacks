@@ -1,0 +1,5 @@
+Required Gems:
+
+  DataMapper
+  HAML
+  Sass
