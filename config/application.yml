@@ -1,0 +1,11 @@
+:application:
+    :name: "{your app's name here}"
+:database:
+  :development: 'development.db'
+  :test: 'test.db'
+  :production: 'production.db'
+:services:
+    :flickr:
+        :username: '{username}'
+    :twitter:
+        :username: '{username}'
