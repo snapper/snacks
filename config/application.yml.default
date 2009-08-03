@@ -1,9 +1,0 @@
-:database:
-  :development: "/path/to/sqlite3/file"
-  :test: "/path/to/sqlite3/file"
-  :production: "/path/to/sqlite3/file"
-:services:
-  :flickr:
-    :nsid: "your_nsid_from_flickr"
-  :twitter:
-    :username: "your_twitter_name"
