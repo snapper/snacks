@@ -22,7 +22,7 @@ module Snacks
           DataMapper.setup(:default, "sqlite3:///#{root_path}/databases/#{config[:database][environment.to_sym]}")
           DataMapper::Logger.new(STDOUT, :debug)
 
-          %w[bite photo post tweet].each do |model|
+          %w[bite photo tweet].each do |model|
            require "#{root_path}/lib/#{model}.rb"
           end
         end
