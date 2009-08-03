@@ -19,12 +19,14 @@ module Snacks
           
           environment = ENV['RACK_ENV'] || 'development'
           
-          DataMapper.setup(:default, "sqlite3:///#{root_path}/databases/#{config[:database][environment.to_sym]}")
+          DataMapper.setup(:default, "sqlite3:///#{root_path}/database/#{config[:database][environment.to_sym]}")
           DataMapper::Logger.new(STDOUT, :debug)
 
           %w[bite photo tweet].each do |model|
            require "#{root_path}/lib/#{model}.rb"
           end
+          
+          DataMapper.auto_migrate!
         end
      
         get "/" do
