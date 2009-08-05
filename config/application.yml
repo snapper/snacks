@@ -1,11 +1,12 @@
 :application:
-    :name: "{your app's name here}"
+    :name: "witty name"
 :database:
   :development: 'development.db'
   :test: 'test.db'
   :production: 'production.db'
 :services:
     :flickr:
-        :username: '{username}'
+        :api_key: ''
+        :nsid: ''
     :twitter:
-        :username: '{username}'
+        :username: ''
